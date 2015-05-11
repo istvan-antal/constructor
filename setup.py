@@ -13,7 +13,7 @@ if sys.version_info[:2] == (2, 6):
 
 setup(
     name="constructor",
-    version="0.0.1.dev1",
+    version="0.0.3",
     description="A tool for building up infrastructure.",
     long_description="Constructor can be used to automate infrastructure creation and provisioning.",
     url="http://istvan-antal.github.io/constructor/",
@@ -35,10 +35,13 @@ setup(
     ],
     keywords="infrastructure build provisioning aws automate",
     packages=find_packages('.'),
+    package_data={
+        'constructor': ['20auto-upgrades'],
+    },
     install_requires=required_packages,
     entry_points={
         'console_scripts': [
-            'construct = cli:main'
+            'construct = constructor.cli:main'
         ]
     }
 )
