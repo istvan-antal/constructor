@@ -1,8 +1,14 @@
-# Requirments
+# Constructor
 
-Git
+Constructor is a tool that can build up infrastructure in an automated way.
 
-# Setup
+The main design goal of constructor was to have infrastructure specifications(blueprints) in code in a versioned manner.
+
+## Setup
+
+```sh
+pip install constructor
+```
 
 Constructor works with environments, for this guide, we will create an environment called: dev
 
