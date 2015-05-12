@@ -13,7 +13,7 @@ if sys.version_info[:2] == (2, 6):
 
 setup(
     name="constructor",
-    version="0.0.3",
+    version="0.1.0",
     description="A tool for building up infrastructure.",
     long_description="Constructor can be used to automate infrastructure creation and provisioning.",
     url="http://istvan-antal.github.io/constructor/",
